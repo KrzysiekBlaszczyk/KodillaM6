@@ -75,7 +75,7 @@ public class ShapeCollectorTestSuite {
             //When
             Shape shapeResult = shapeCollector.getFigure(-3);
             //Then
-            Assertions.assertEquals(shape, shapeResult);
+            Assertions.assertNull(shapeResult);
         }
         @Test
         void testGetFigureOverListNumber() {
@@ -86,7 +86,7 @@ public class ShapeCollectorTestSuite {
             //When
             Shape shapeResult = shapeCollector.getFigure(90);
             //Then
-            Assertions.assertEquals(shape, shapeResult);
+            Assertions.assertNull(shapeResult);
         }
     }
     @Nested
