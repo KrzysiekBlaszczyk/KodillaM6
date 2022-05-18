@@ -66,6 +66,28 @@ public class ShapeCollectorTestSuite {
             //Then
             Assertions.assertEquals(shapeList.toString(), shapeResultList.toString());
         }
+        @Test
+        void testGetFigureNegativeNumber() {
+            //Given
+            ShapeCollector shapeCollector = new ShapeCollector();
+            Shape shape = new Circle("Circle", 3);
+            shapeCollector.addFigure(shape);
+            //When
+            Shape shapeResult = shapeCollector.getFigure(-3);
+            //Then
+            Assertions.assertEquals(shape, shapeResult);
+        }
+        @Test
+        void testGetFigureOverListNumber() {
+            //Given
+            ShapeCollector shapeCollector = new ShapeCollector();
+            Shape shape = new Circle("Circle", 3);
+            shapeCollector.addFigure(shape);
+            //When
+            Shape shapeResult = shapeCollector.getFigure(90);
+            //Then
+            Assertions.assertEquals(shape, shapeResult);
+        }
     }
     @Nested
     @DisplayName("Test for Remove")
