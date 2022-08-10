@@ -24,6 +24,9 @@ public class FlightLogic {
     }
     public boolean findFlight(Flight flight) throws RouteNotFoundException{
         Boolean result = airportsList.get(flight.getArrivalAirport());
+        if (flight == null) {
+            throw new IllegalArgumentException();
+        }
         if (result==false) {
             throw new RouteNotFoundException("Airport don't exist");
         }else {

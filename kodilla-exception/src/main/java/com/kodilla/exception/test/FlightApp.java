@@ -12,7 +12,7 @@ public class FlightApp {
         airportsList.put("Gdańsk", false);
         FlightLogic flightLogic = new FlightLogic(airportsList);
         try {
-            flightLogic.findFlight(warGda);
+            flightLogic.findFlight(warBer);
             System.out.println("Airport exist");
         }
         catch (RouteNotFoundException e){
