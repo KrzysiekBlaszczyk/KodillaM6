@@ -35,4 +35,16 @@ public class TaskList {
     public String getListName() {
         return listName;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setListName(String listName) {
+        this.listName = listName;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
