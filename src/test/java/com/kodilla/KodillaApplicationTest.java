@@ -1,7 +1,7 @@
 package com.kodilla;
 
 
-class KodillaApplicationTestt {
+class KodillaApplicationTest {
 
 //    @Test
 //    void contextLoads() {
