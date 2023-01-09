@@ -21,6 +21,3 @@ test {
     useJUnitPlatform()
 }
 
-apply plugin: 'application'
-
-mainClassName = 'com.kodilla.KodillaAplication'
