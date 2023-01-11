@@ -18,10 +18,10 @@ public final class Facade {
     private EmployeeDao employeeDao;
 
     public List<Company> retrieveCompanyByPartOfName (String partOfCompanyName) {
-        return companyDao.retrieveCompaniesByPartOfName("%"+ partOfCompanyName + "%");
+        return companyDao.retrieveCompaniesByPartOfName(partOfCompanyName);
     }
 
     public List<Employee> retrieveEmployeeByPartOfLastName (String partOfLastName) {
-        return employeeDao.retrieveEmployeeWithPartOfLastName("%" + partOfLastName + "%");
+        return employeeDao.retrieveEmployeeWithPartOfLastName(partOfLastName);
     }
 }

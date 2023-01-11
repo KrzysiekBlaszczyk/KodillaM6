@@ -14,7 +14,7 @@ import java.util.List;
 
 @NamedQuery(
         name="Company.retrieveCompaniesByPartOfName",
-        query = "FROM Company WHERE name LIKE:PartOfCompanyName"
+        query = "FROM Company WHERE name LIKE CONCAT('%',:PartOfCompanyName,'%')"
 )
 
 @Entity
